@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Life System</title>
+
+<style>
+body{
+margin:0;
+font-family:system-ui;
+background:linear-gradient(to bottom,#000000,#0a0a0a);
+color:white;
+text-align:center;
+}
+
+/* HEADER */
+h1{
+color:#00ff99;
+margin-top:20px;
+font-size:26px;
+}
+
+.quote{
+font-size:14px;
+color:#aaa;
+margin-bottom:20px;
+}
+
+/* BOX */
+.box{
+background:#111;
+margin:15px;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,255,150,0.15);
+}
+
+/* TASK */
+.task{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:10px 0;
+background:#1a1a1a;
+padding:10px;
+border-radius:10px;
+}
+
+.task.done{
+text-decoration:line-through;
+opacity:0.5;
+}
+
+/* BUTTON */
+button{
+background:#00ff99;
+border:none;
+padding:8px 12px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+margin-top:20px;
+font-size:13px;
+color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🔥 MY DAILY SYSTEM</h1>
+<p class="quote">“Ntabwo nabuze umuntu — ndimo kuba umuntu batabura.”</p>
+
+<div class="box">
+<h2>🌅 Morning</h2>
+
+<div class="task" onclick="toggle(this)">Exercise</div>
+<div class="task" onclick="toggle(this)">Cold Shower</div>
+<div class="task" onclick="toggle(this)">Coding</div>
+
+</div>
+
+<div class="box">
+<h2>🏫 Day</h2>
+
+<div class="task" onclick="toggle(this)">Class Focus</div>
+<div class="task" onclick="toggle(this)">Speak Once</div>
+<div class="task" onclick="toggle(this)">Write Ideas</div>
+
+</div>
+
+<div class="box">
+<h2>💼 Evening</h2>
+
+<div class="task" onclick="toggle(this)">Business Work</div>
+<div class="task" onclick="toggle(this)">Learn Strategy</div>
+<div class="task" onclick="toggle(this)">Client Outreach</div>
+
+</div>
+
+<div class="box">
+<h2>🌙 Night</h2>
+
+<div class="task" onclick="toggle(this)">Reflection Writing</div>
+<div class="task" onclick="toggle(this)">Plan Tomorrow</div>
+<div class="task" onclick="toggle(this)">Sleep Early</div>
+
+</div>
+
+<p class="footer">Discipline • Focus • Growth</p>
+
+<script>
+function toggle(el){
+el.classList.toggle("done");
+}
+</script>
+
+</body>
+</html>
