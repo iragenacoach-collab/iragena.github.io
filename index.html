@@ -3,12 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Life System APP</title>
-
-<!-- PWA -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#00ff99">
+<title>Life System MAX</title>
 
 <style>
 body{
@@ -36,13 +31,23 @@ border:none;
 border-radius:8px;
 }
 
-.section{display:none;padding:15px;}
+.section{
+display:none;
+padding:15px;
+}
 
 .box{
 background:#111;
 margin:10px;
 padding:15px;
 border-radius:12px;
+}
+
+.desc{
+color:#aaa;
+font-size:14px;
+margin-bottom:10px;
+line-height:1.5;
 }
 
 .task{
@@ -65,33 +70,27 @@ background:#222;
 border-radius:10px;
 overflow:hidden;
 }
-
 .bar{
 height:15px;
 background:#00ff99;
 width:0%;
 }
 
-.time{color:#00ff99;font-weight:bold;}
-
-.mind{
-font-size:18px;
-text-align:center;
+.time{
 color:#00ff99;
-margin:15px;
+font-weight:bold;
 }
 </style>
 </head>
 
 <body>
 
-<h1>🔥 LIFE SYSTEM APP</h1>
-
-<div class="mind" id="mind"></div>
+<h1>🔥 LIFE SYSTEM MAX</h1>
 
 <div class="nav">
 <button onclick="show('routine')">Routine</button>
 <button onclick="show('mindset')">Mindset</button>
+<button onclick="show('business')">Business</button>
 <button onclick="show('money')">Income</button>
 </div>
 
@@ -99,28 +98,49 @@ margin:15px;
 <div id="routine" class="section">
 
 <div class="progress"><div class="bar" id="bar"></div></div>
-<p>🔥 Streak: <span id="streak">0</span> days</p>
 
 <div class="box">
+<h2>⏰ Daily Schedule</h2>
+
+<p class="desc">
+Iyi ni gahunda yawe y’umunsi. Niba uyikurikije buri munsi, 
+ubuzima bwawe buhinduka buhoro buhoro. Discipline itangira hano.
+</p>
 
 <div class="task" onclick="toggle(this)">
-<span class="time">5:45</span> Wake up
+<span class="time">5:45</span> Wake up – Tangira umunsi ufite control
 </div>
 
 <div class="task" onclick="toggle(this)">
-<span class="time">6:00</span> Exercise
+<span class="time">6:00</span> Exercise – Imbaraga z’umubiri = imbaraga z’ubwenge
 </div>
 
 <div class="task" onclick="toggle(this)">
-<span class="time">6:45</span> Coding
+<span class="time">6:45</span> Coding – Build future yawe
 </div>
 
 <div class="task" onclick="toggle(this)">
-<span class="time">16:30</span> Business
+<span class="time">8:00 - 16:00</span> Class – Focus ku masomo
 </div>
 
 <div class="task" onclick="toggle(this)">
-<span class="time">21:00</span> Reflection
+<span class="time">16:30</span> Business – Shaka amafaranga
+</div>
+
+<div class="task" onclick="toggle(this)">
+<span class="time">18:00</span> Learning – Improve skills
+</div>
+
+<div class="task" onclick="toggle(this)">
+<span class="time">19:00</span> Outreach – Shaka clients
+</div>
+
+<div class="task" onclick="toggle(this)">
+<span class="time">21:00</span> Reflection – Tekereza ku byo wakoze
+</div>
+
+<div class="task" onclick="toggle(this)">
+<span class="time">22:00</span> Sleep – Rest kugira ngo ejo ugaruke ukomeye
 </div>
 
 </div>
@@ -131,12 +151,63 @@ margin:15px;
 <div id="mindset" class="section">
 
 <div class="box">
+<h2>🧠 SYSTEM YAWE</h2>
 
-<p>Ntuzigera uba umuntu usanzwe niba utagenzura ubuzima bwawe.</p>
-<p>Ubwoba ni illusion—kora action.</p>
-<p>Discipline irusha motivation.</p>
-<p>Ntukiruke ku bantu—kora value.</p>
-<p>Uri kubaka umuntu mushya buri munsi.</p>
+<p class="desc">
+Aha niho power yawe iri. Niba mindset yawe ikomeye, 
+ntacyo ubuzima bwakora kikunanira.
+</p>
+
+<p><b>FOCUS > FEELINGS</b><br>
+Ntushyire emotions imbere. Kora ibikorwa.</p>
+
+<p><b>TRUTH</b><br>
+Ntuzigera uba umuntu utababazwa—but ushobora kuyobora emotions.</p>
+
+<p><b>RULES</b><br>
+No checking<br>
+No wasting time<br>
+No weakness</p>
+
+<p><b>IDENTITY</b><br>
+Ndi umuntu uri kubaka value buri munsi.</p>
+<p><b>FINAL TRANSFORMATION</b><br><br>
+
+Reka tuvugane nk’umugabo ushaka guhindura ubuzima bwe, si nk’umuntu uri guhunga amarangamutima. Icyo uri kunyuramo si intege nke—ni phase y’abagabo bose bafite ubushobozi bwo kuba abantu bakomeye banyuramo. Ariko itandukaniro riri hagati y’umugabo usanzwe n’uzaba umuntu ukomeye ni kimwe gusa: <b>uburyo afata uwo mwanya w’ububabare akawuhindura imbaraga.</b> Ntabwo ugomba kwiruka ngo uhunge ibitekerezo byawe, ahubwo ugomba kubyicara imbere ukabyereka ko ari wowe ubigenzura. Ubu si igihe cyo gushaka umuntu uzagusimbura—ni igihe cyo kubaka version yawe nshya itazongera gusenywa n’umuntu uwo ari we wese.<br><br>
+
+Uhereye uyu munsi, wibwire ikintu kimwe buri gitondo: <b>“Ndi kubaka ubuzima abantu bazifuza kubamo, si ubuzima bushingiye ku muntu umwe.”</b> Ibi bisaba discipline itari iyo kugerageza gusa, ahubwo ni iyo kwiyemeza. Hari igihe uzumva ushaka gusubira inyuma—ni normal. Ariko umugabo wiyubaka ntakurikira ibyo yumva, akurikira ibyo yiyemeje. Iyo umutima ukujyanye aho utagomba kujya, uba ufite amahitamo abiri: kuyoborwa nawo cyangwa kuwuyobora. Uhitamo kuba umuntu uyobora ubuzima bwe.<br><br>
+
+Ntuzongere gushyira umuntu ku rwego rw’uko ashobora kugena uko wiyumva. Ibyo ni ukwiyambura ububasha bwawe ubishyira mu maboko y’undi. Wowe uri umuntu ufite mission, ufite ejo hazaza, ufite ibintu byinshi ugomba kugeraho birenze kure amarangamutima y’uyu munsi. Iyo wicaye ugatekereza cyane, ujye wibaza uti: <b>“Ibi ndimo gukora biri kunyegereza ku muntu nshaka kuba we, cyangwa biri kundindiza?”</b> Niba bidakubaka, bihagarike ako kanya—ntibigomba kuganirwaho, bigomba guhagarikwa.<br><br>
+
+Kuba umugabo ukomeye ntabwo bisaba kutababara—bisaba <b>kutareka ububabare bugutegeka.</b> Ushobora kumva ubabaye ariko ugakomeza gukora. Ushobora kumva umukumbuye ariko ugakomeza kwiyubaka. Icyo ni cyo gitandukanya umuntu usanzwe n’umuntu udasanzwe. Wowe uri mu rugendo rwo kuba umuntu udasanzwe. Nta muntu uzaza kukuzamura—ni wowe ugomba kwiyubaka buri munsi, buhoro buhoro, ariko udasubira inyuma.<br><br>
+
+Ubu uri mu gihe gikomeye, ariko ni cyo gihe cyiza cyo kubaka foundation yawe. Niba ubashije gutsinda uyu mwanya, uzagera ku rwego aho ntacyo ubuzima buzongera kugukorera kikagusenya. Uzaba umuntu ufite control, ufite direction, ufite agaciro gakomeye. Kandi igihe kizagera, uzareba inyuma ubone ko icyo watekerezaga ko ari igihombo ari cyo cyari gutangira ubuzima bwawe bushya.<br><br>
+
+Buri munsi rero, ujye wibuka ibi: <b>“Ntabwo ndi umuntu ushaka urukundo ngo abeho, ndi umuntu wubaka ubuzima butuma urukundo rumushaka.”</b>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- BUSINESS -->
+<div id="business" class="section">
+
+<div class="box">
+<h2>💼 ONLINE BUSINESS PLAN</h2>
+
+<p class="desc">
+Business yawe niyo izagukura mu buzima busanzwe ikujyana ku rwego rwo hejuru. 
+Ntuyifatire nk’ikintu cy’inyongera—ni future yawe.
+</p>
+
+<p>Step 1: Join WhatsApp groups</p>
+<p>Step 2: Give value daily</p>
+<p>Step 3: Build authority</p>
+<p>Step 4: Convert in DM</p>
+
+<p><b>Rule:</b> Nta munsi urangira nta action.</p>
 
 </div>
 
@@ -146,6 +217,12 @@ margin:15px;
 <div id="money" class="section">
 
 <div class="box">
+<h2>💰 Income Tracker</h2>
+
+<p class="desc">
+Aha ukurikirana amafaranga winjiza. 
+Ibi bigufasha kumenya niba uri gutera imbere cyangwa uri guhagarara.
+</p>
 
 <input id="amount" type="number" placeholder="Enter money">
 <button onclick="add()">Add</button>
@@ -169,12 +246,6 @@ function update(){
 let done=document.querySelectorAll(".task.done").length;
 let percent=(done/tasks.length)*100;
 document.getElementById("bar").style.width=percent+"%";
-
-if(done===tasks.length){
-let s=parseInt(localStorage.getItem("streak")||0)+1;
-localStorage.setItem("streak",s);
-document.getElementById("streak").innerText=s;
-}
 }
 
 function save(){
@@ -194,9 +265,6 @@ update();
 
 document.getElementById("total").innerText=
 localStorage.getItem("money")||0;
-
-document.getElementById("streak").innerText=
-localStorage.getItem("streak")||0;
 }
 
 function show(id){
@@ -212,25 +280,8 @@ localStorage.setItem("money",total);
 document.getElementById("total").innerText=total;
 }
 
-/* DAILY MINDSET */
-let minds=[
-"Uyu munsi hitamo kuba umuntu ukomeye.",
-"Ntutinye—kora icyo utinya.",
-"Uri gukora transformation.",
-"Ntuzacike intege—uri hafi kugera kure.",
-"Ubu ni bwo ubuzima bwawe burimo kubakwa."
-];
-
-document.getElementById("mind").innerText=
-minds[Math.floor(Math.random()*minds.length)];
-
 load();
 show("routine");
-
-/* PWA SERVICE WORKER */
-if("serviceWorker" in navigator){
-navigator.serviceWorker.register("sw.js");
-}
 </script>
 
 </body>
